@@ -103,6 +103,7 @@ $up = "$u1.$u2 Mbit"
 $Out_Log = "$time  Download: $down  Upload: $up  Ping latency: $ping ms"
 $Out_Log >> $LogPath
 }
+$Connection.Close()
 
 $Data.result
 }
