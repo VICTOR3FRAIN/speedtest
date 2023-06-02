@@ -75,7 +75,7 @@ $Data.result.date = $UTCTime.AddMinutes($TimeZone.BaseUtcOffset.TotalMinutes)
     $mysql_user = "consultores_speedtest "
     $mysql_password = "EfcD2RzPvykzWfbAMiRddAjwQTFRK6MT2sr75fwC..."
     $dbName = "speedtest"
-    [void][system.reflection.Assembly]::LoadFrom("C:\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll")
+    [void][system.reflection.Assembly]::LoadFrom("C:\Program Files (x86)\MySQL\MySQL Connector NET 8.0.33\MySql.Data.dll")
     $Connection = New-Object -TypeName MySql.Data.MySqlClient.MySqlConnection
     $Connection.ConnectionString = "SERVER=$mysql_server;DATABASE=$dbName;UID=$mysql_user;PWD=$mysql_password"
     $Connection.Open()
