@@ -10,7 +10,7 @@ Works in PSVersion 5.1 (PowerShell 7.3 not supported)
 Example:
 $SpeedTest = Invoke-SpeedTest # Output to variable full report
 Invoke-SpeedTest -LogWrite # Write to log
-Invoke-SpeedTest -LogWrite -LogPath "$home\Documents\Ookla-SpeedTest-Log.txt" # Set default path for log
+Invoke-SpeedTest -LogWrite -LogPath "$home\Documents\Conserva-SpeedTest-Log.txt" # Set default path for log
 Invoke-SpeedTest -LogRead | ft # Out log to PSObject
 Invoke-SpeedTest -LogClear # Clear log file
 .LINK
@@ -18,7 +18,7 @@ https://github.com/Lifailon/Ookla-SpeedTest-API
 #>
 param(
     [switch]$LogWrite,
-    $LogPath = "$home\Documents\Ookla-SpeedTest-Log.txt",
+    $LogPath = "$home\Documents\Conserva-SpeedTest-Log.txt",
     [switch]$LogRead,
     [switch]$LogClear
 )
