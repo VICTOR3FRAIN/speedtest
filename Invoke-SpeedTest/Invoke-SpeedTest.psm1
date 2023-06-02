@@ -1,4 +1,4 @@
-function Invoke-SpeedTest {
+function Invoke-SpeedTestConserva {
 <#
 .SYNOPSIS
 Module creating metrics measurements Internet speed to mode cli (no use dependencies) for output to console PSObject and log file
