@@ -8,11 +8,11 @@ Using REST API GET method (via Invoke-RestMethod) for parsing JSON report
 Works in PSVersion 5.1 (PowerShell 7.3 not supported)
 .DESCRIPTION
 Example:
-$SpeedTest = Invoke-SpeedTest # Output to variable full report
-Invoke-SpeedTest -LogWrite # Write to log
-Invoke-SpeedTest -LogWrite -LogPath "$home\Documents\Conserva-SpeedTest-Log.txt" # Set default path for log
-Invoke-SpeedTest -LogRead | ft # Out log to PSObject
-Invoke-SpeedTest -LogClear # Clear log file
+$SpeedTest = Invoke-SpeedTestConserva # Output to variable full report
+Invoke-SpeedTestConserva -LogWrite # Write to log
+Invoke-SpeedTestConserva -LogWrite -LogPath "$home\Documents\Conserva-SpeedTest-Log.txt" # Set default path for log
+Invoke-SpeedTestConserva -LogRead | ft # Out log to PSObject
+Invoke-SpeedTestConserva -LogClear # Clear log file
 .LINK
 https://github.com/Lifailon/Ookla-SpeedTest-API
 #>
